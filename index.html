@@ -4,28 +4,30 @@
   <title>Cosmic Arcade Control</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body onload="updateUI()">
 
 <div class="big-title">🌌 COSMIC ARCADE CONTROL</div>
 
-<div class="panel">
-  <p>XP: <span id="xp"></span></p>
-  <p>Tickets: <span id="tickets"></span></p>
-  <p>Rank: <span id="rank"></span></p>
+<div class="hud">
+  <div>⭐ XP: <span id="xp"></span></div>
+  <div>🎟️ Tickets: <span id="tickets"></span></div>
+  <div>🚀 Rank: <span id="rank"></span></div>
 </div>
 
 <div class="panel">
-  <h2>🚀 Cosmic Lobby</h2>
-  <a href="mission.html"><button>Mission Control</button></a>
-  <a href="arcade.html"><button>Arcade</button></a>
-  <a href="solar.html"><button>Solar System</button></a>
-  <a href="rocket.html"><button>Rocket Launch</button></a>
-  <a href="games.html"><button>Mini Games</button></a>
-  <a href="avatar.html"><button>Avatar</button></a>
-  <a href="prizes.html"><button>Prize Center</button></a>
-  <a href="achievements.html"><button>Achievements</button></a>
-  <a href="daily.html"><button>Daily Missions</button></a>
-  <a href="secret.html"><button>Secret Zone</button></a>
+  <button onclick="toggleSound()">🔊 Toggle Sound</button>
+</div>
+
+<div class="panel">
+  <h2>🚀 Enter Universe</h2>
+
+  <button onclick="location.href='mission.html'">Mission Control</button>
+  <button onclick="location.href='solar.html'">Solar System</button>
+  <button onclick="location.href='rocket.html'">Rocket Launch</button>
+  <button onclick="location.href='games.html'">Arcade Games</button>
+  <button onclick="location.href='prizes.html'">Prize Wheel</button>
+  <button onclick="location.href='secret.html'">Secret Zone</button>
 </div>
 
 <script src="app.js"></script>

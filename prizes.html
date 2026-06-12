@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="updateUI()">
+
+<div class="panel">
+  <h1>🎁 Prize Center</h1>
+
+  <button onclick="spin()">Spin Wheel</button>
+</div>
+
+<script src="app.js"></script>
+
+<script>
+function spin(){
+  let reward = Math.floor(Math.random()*50);
+  addTickets(reward);
+  alert("You won " + reward + " tickets!");
+}
+</script>
+
+</body>
+</html>

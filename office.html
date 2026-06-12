@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="updateUI()">
+
+<div class="panel">
+  <h1>🚀 Rocket Launch</h1>
+
+  <button onclick="launch()">Launch Rocket</button>
+</div>
+
+<script src="app.js"></script>
+
+<script>
+function launch(){
+  alert("Countdown: 3...2...1...");
+  let success = Math.random() > 0.3;
+
+  if(success){
+    addXP(50);
+    addTickets(30);
+    addAchievement("Successful Launch");
+  } else {
+    addXP(10);
+    alert("Partial launch success!");
+  }
+}
+</script>
+
+</body>
+</html>

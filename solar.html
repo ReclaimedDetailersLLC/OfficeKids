@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="updateUI()">
+
+<div class="panel">
+  <h1>🪐 Solar System</h1>
+
+  <button onclick="visit('Mars')">Mars</button>
+  <button onclick="visit('Jupiter')">Jupiter</button>
+  <button onclick="visit('Saturn')">Saturn</button>
+</div>
+
+<script src="app.js"></script>
+
+<script>
+function visit(planet){
+  alert("Exploring " + planet);
+  addXP(20);
+  addTickets(10);
+}
+</script>
+
+</body>
+</html>

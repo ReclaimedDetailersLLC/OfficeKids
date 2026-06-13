@@ -1602,6 +1602,11 @@
     getGame(gameId) {
       const entry = GAME_LIST.find(g => g.id === gameId);
       return entry ? entry.impl : null;
+    },
+
+    getGameName(gameId) {
+      const entry = GAME_LIST.find(g => g.id === gameId);
+      return entry ? entry.name : gameId;
     }
   };
 
